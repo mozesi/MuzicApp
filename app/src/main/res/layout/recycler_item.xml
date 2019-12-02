@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/song_thumbnail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@mipmap/music" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingLeft="8dp">
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:text="The song title"
+            android:textColor="@color/black_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:text="The artist name"
+            android:textColor="@color/black_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="2"
+            android:text="The album name"
+            android:textColor="@color/black_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="2"
+        android:elevation="4dp"
+        android:src="@android:drawable/ic_media_play" />
+</LinearLayout>
